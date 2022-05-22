@@ -1,5 +1,5 @@
 export * from './ContextProvider'
 export { default as ContextProvider } from './ContextProvider'
-export * from './reducer'
+export { default as mainReducer } from './reducer'
 export * from './Types'
 export * from './Actions'

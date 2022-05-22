@@ -1,6 +1,9 @@
 import React, { createContext, useContext, useReducer } from 'react'
-import mainReducer from './reducer'
+
+import { mainReducer } from '.'
+
 const StoreContext = createContext<any>(null)
+
 type Props = {
   children: React.ReactNode
 }
@@ -11,4 +14,4 @@ const ContextProvider: React.FC<Props> = ({ children }: Props) => {
 }
 
 export default ContextProvider
-export const useMyContext = () => useContext(StoreContext)
+export const useMyContext = (): any => useContext(StoreContext)

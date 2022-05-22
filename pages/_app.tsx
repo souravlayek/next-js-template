@@ -1,7 +1,7 @@
 import { ContextProvider } from 'Application/Store'
 import { AppProps } from 'next/app'
 
-const App = ({ Component, pageProps }: AppProps) => {
+const App = ({ Component, pageProps }: AppProps): JSX.Element => {
   return (
     <ContextProvider>
       <Component {...pageProps} />
