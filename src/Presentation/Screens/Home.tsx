@@ -1,10 +1,10 @@
 import { loginUser } from 'Application'
-import { useAppDispatch, useAppSelector } from 'Application/Store/storeHook'
+import { useAppDispatch, useAppSelector } from 'Application'
 import React, { useEffect } from 'react'
 
 const Home: React.FC = () => {
   const dispatch = useAppDispatch()
-  const user = useAppSelector((state) => state.user)
+  const user = useAppSelector((state: any) => state.user)
   useEffect(() => {
     dispatch(
       loginUser({

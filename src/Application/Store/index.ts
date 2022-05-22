@@ -18,3 +18,5 @@ export type AppThunk<ReturnType = void> = ThunkAction<
 >
 export { default as ReduxWrapper } from './ReduxWrapper'
 export * from './Slice'
+export * from './ReduxWrapper'
+export * from './storeHook'
