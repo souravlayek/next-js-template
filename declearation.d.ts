@@ -11,3 +11,8 @@ declare module '*.svg' {
   const content: any
   export default content
 }
+
+declare interface PayloadAction<T> {
+  type: string
+  payload?: T
+}
